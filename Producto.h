@@ -28,17 +28,8 @@ class Producto{
       precio = costo;
       cantidadinicial = cantidad;
     }
-    string getcodigo(){
-      return codigo;
-    }
-    string getnombre(){
-      return nombre;
-    }
-    int getPrecio(){
-      return precio;
-    }
-    int getCantidadInicial(){
-      return cantidadinicial;
+    void mostrarinformacion(){
+    	cout << "Codigo: " << codigo << " Nombre: " << nombre << " Precio: " << precio << " Cantidad: " << cantidadinicial <<endl;
     }
 };
 
