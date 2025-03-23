@@ -6,16 +6,40 @@
 #define VENTA_H
 
 #include <iostream>
+#include <string>
 #include "Producto.h"
-#include "Cliente.h"
 using namespace std;
 
-
-class Venta{
+class Venta {
 private:
-    Cliente* cliente;
-    Producto* producto;
+    string cliente;
+    string producto;
+    int id;
+
 public:
+    Venta() {
+        cliente = "";
+        producto = "";
+        id = 0;
+    }
+
+    Venta(string clienteventa, string productoventa, int idventa) {
+        this->cliente = clienteventa;
+        this->producto = productoventa;
+        this->id = idventa;
+    }
+    string getCliente() {
+        return cliente;
+    }
+    string getProducto() {
+        return producto;
+    }
+    int getId() {
+        return id;
+    }
+    void mostrarinformacionventa() {
+        cout << getCliente() << " " << getProducto() << " " << getId() << endl;
+    }
 
 };
 
