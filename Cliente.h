@@ -56,9 +56,3 @@ public:
 };
 
 #endif // CLIENTE_H
-
-
-};
-
-
-#endif //CLIENTE_H
