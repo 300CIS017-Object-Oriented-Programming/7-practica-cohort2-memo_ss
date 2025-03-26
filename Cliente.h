@@ -4,17 +4,19 @@
 
 #ifndef CLIENTE_H
 #define CLIENTE_H
+
 #include "Venta.h"
 #include <iostream>
 #include <vector>
-using namespace std;
 
+using namespace std;
 
 class Cliente {
 private:
     int id;
     string nombre;
     vector<Venta*> compras;
+
 public:
     Cliente();
     Cliente(string nom, int identificacion);
@@ -26,5 +28,4 @@ public:
     int getsizecomprascliente();
 };
 
-
-#endif //CLIENTE_H
+#endif // CLIENTE_H
