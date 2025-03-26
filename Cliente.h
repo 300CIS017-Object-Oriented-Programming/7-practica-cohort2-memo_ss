@@ -16,33 +16,14 @@ private:
     string nombre;
     vector<Venta*> compras;
 public:
-    Cliente() {
-        id = 0;
-        nombre = "";
-    }
-    Cliente(string nom, int identificacion) {
-        id = identificacion;
-        nombre = nom;
-    }
-    string getnombrecliente() {
-        return nombre;
-    }
-    int getidcliente() {
-        return id;
-    }
-    void mostrarinformacion(){
-        cout << "identificacion: " << id << " Nombre:" << nombre <<endl;
-    }
-    void agregarcompra(Venta* venta) {
-        compras.push_back(venta);
-        cout << "Compra agregada. Total de compras: " << compras.size() << endl;
-    }
-    void mostrarcompras() {
-        for (size_t i = 0; i < compras.size(); i++) {
-            compras[i]->mostrarinformacionventa();
-        }
-    }
-
+    Cliente();
+    Cliente(string nom, int identificacion);
+    string getnombrecliente();
+    int getidcliente();
+    void mostrarinformacion();
+    void agregarcompra(Venta* venta);
+    void mostrarcompras();
+    int getsizecomprascliente();
 };
 
 
